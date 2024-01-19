@@ -1,0 +1,29 @@
+.sider {
+  background-color: #001529;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #001529;
+  color: #fff;
+  overflow-y: auto;
+}
+.product-name {
+  padding: 16px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  border-bottom: 1px solid #001529;
+}
+
+.menu-item:hover {
+  background-color: #1890ff;
+}

@@ -1,0 +1,259 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes sure the container takes at least the viewport height */
+}
+
+.bookingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Adjusted for footer height */
+  overflow: auto; /* Adds scrollbar if content overflows */
+}
+
+.footer {
+  width: 100%;
+  background: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -2px 5px -2px #333; /* Optional: adds shadow for better separation */
+}
+
+.bookingForm {
+  width: 72%;
+  padding: 20px;
+  margin-bottom: 20px; /* Space for the footer */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-summary {
+  width: 23%;
+  padding: 20px;
+  margin-bottom: 20px; /* Space for the footer */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the summary header */
+.summaryHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* Styles for individual summary rows */
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+/* Styles for the total summary row */
+.summaryRow.total {
+  margin-top: 16px;
+  border-top: 2px solid #eaeaea;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+/* Styles for the pending amount */
+.summaryRow.pending {
+  color: #ff6b6b;
+}
+
+/* Styles for the divider */
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  margin: 8px 0;
+}
+
+.content-area {
+  flex: 1; /* Allows this area to grow and occupy available space */
+  overflow-y: auto; /* Adds scrollbar to the content area if needed */
+}
+
+.guest-details .ant-card {
+  width: 100%;
+}
+
+.guest-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-guest-button {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.summaryItem.total {
+  font-weight: bold;
+}
+
+.summaryItem.paid {
+  color: green;
+  font-weight: bold;
+}
+
+.summaryItem.pending {
+  color: red;
+  font-weight: bold;
+}
+
+.footer-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.proceed-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.guest-table {
+  margin-top: 20px;
+}
+
+.ant-table {
+  background-color: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  font-weight: bold;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #ddd;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background-color: #f0f2f5;
+}
+
+.add-guest-button {
+  background-color: #1890ff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.blue-button {
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: #003a8c;
+  text-decoration: none;
+}
+
+.blue-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bookingSummary {
+  width: 23%;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.summaryHeader {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.summaryTable {
+  width: 100%;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.summaryRow.total {
+  margin-top: 16px;
+  border-top: 2px solid #eaeaea;
+  padding-top: 8px;
+  font-weight: bold;
+}
+
+.summaryRow.pending {
+  color: #ff6b6b;
+}
+
+hr {
+  margin: 8px 0;
+  border: 0;
+  border-top: 1px solid #eaeaea;
+}
